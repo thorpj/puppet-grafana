@@ -79,7 +79,7 @@ class grafana::install {
               repos    => 'main',
               key      =>  {
                 'id'     => '4E40DDF6D76E284A4A6780E48C8C34C524098CB6',
-                'source' => 'https://packages.grafana.com/gpg.key',
+                'server' => 'https://packages.grafana.com/gpg.key',
               },
               before   => Package[$::grafana::package_name],
             }
